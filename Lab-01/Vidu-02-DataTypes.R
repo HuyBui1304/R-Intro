@@ -178,3 +178,13 @@ time2
 time3 <- as.POSIXct("16/02/2024 14:30:00", 
                     format="%d/%m/%Y %H:%M:%S")
 time3
+
+
+# Lấy ra ngày của hệ thống
+today <- Sys.Date()
+today
+
+todayFormatted <- format(today, format="%A %d %B %Y")
+todayFormatted
+
+
