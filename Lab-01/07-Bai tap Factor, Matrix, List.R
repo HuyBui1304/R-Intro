@@ -100,7 +100,7 @@ class(table[,1])
 # 4. Tạo bốn biến với các kiểu khác nhau (vectors, matrices, 
 #                                           single values).
 # Tạo một list từ các đối tượng này đặt tên "myList".
-# a) Lấy phần tử thứ hai của list và thêm một giá trị vào đó.
+# a) Lấy phần tử thứ nhất của list và thêm một giá trị vào đó.
 # Lưu thay đổi để nó hiển thị trong list.
 # b) Thêm phần tử mới vào cuối list - tạo thành vector 6 phần tử 
 # với bất kỳ kiểu nào.
@@ -108,6 +108,25 @@ class(table[,1])
 # d) Thay đổi giá trị của phần tử thứ 5 của đối tượng cuối cùng 
 # thành NA.
 
+# Taoh các biên khác nhau
+vec1 <- c("a", "b", "c")
+mat1 <-matrix(1:6, nrow=2)
+single_val <-100
+vec2 <- c(1,2,3)
 
+# Tạo list
+myList <- list(vec1, mat1, single_val, vec2)
 
+# a
+myList[[1]]<-c(myList[[1]], c("d"))
 
+#b
+length(myList)
+
+myList[[length(myList)+1]] <- c(5,6,7,8,9)
+
+#c
+myList[[length(myList)]][4]
+
+#d
+myList[[length(myList)]][5] <-NA
