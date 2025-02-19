@@ -56,4 +56,16 @@ satisfaction <- factor(
   ordered = TRUE
 )
 
+table(satisfaction)
+# Vẽ biểu đồ
+barplot(table(satisfaction))
 
+# Kích cỡ áo
+sizes <- factor(
+  c("M", "L", "S", "XL", "M", "S", "M", "L", "XL", "M"),
+  levels = c("S", "M", "L", "XL"),
+  ordered = TRUE
+)
+
+# Thống kê số lượng mỗi size
+summary(sizes)
