@@ -81,7 +81,22 @@ summary(x_factor)
 # d) Thay đổi phần tử thứ 4 của cột 2 thành "twelve". 
 # In lại giá trị của cột 2. Kiểm tra kiểu của chúng. Có gì khác?
 # e) Kiểu giá trị của cột 1 là gì? Tại sao?
-#   
+
+table <- matrix(0, nrow=5, ncol=2)
+
+table[,1] <- 3
+
+table[3,2] <- 20
+
+print("Giá trị cột 2:")
+print(table[,2])
+class(table[,2])
+
+table[4,2] <- "twelve" 
+class(table[,2])
+class(table[,1])
+
+
 # 4. Tạo bốn biến với các kiểu khác nhau (vectors, matrices, 
 #                                           single values).
 # Tạo một list từ các đối tượng này đặt tên "myList".
@@ -92,6 +107,7 @@ summary(x_factor)
 # c) In phần tử thứ 4 của đối tượng cuối cùng trong list.
 # d) Thay đổi giá trị của phần tử thứ 5 của đối tượng cuối cùng 
 # thành NA.
+
 
 
 
