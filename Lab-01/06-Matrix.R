@@ -53,3 +53,40 @@ sales <- matrix(
     c("T1", "T2", "T3")
   )
 )
+sales
+
+# Một phần tử tại vị trí hàng 1, cột 2
+sales[1,2]
+
+# Một hàng, một cột
+sales[1,]
+sales[,1]
+
+# Nhiều hàng, nhiều cột
+sales[1:2, ]
+sales[, 2:3]
+
+# Dựa trên tên của cột, hàng
+sales[, "T1"]
+sales[c("SP1", "SP3"), ]
+
+# Tính toán
+rowSums(sales)
+colSums(sales)
+barplot(colSums(sales))
+
+rowMeans(sales)
+colMeans(sales)
+
+
+# Khi nào nên dùng Matrix
+# Dữ liệu có cấu trúc bảng đều đặn
+# Cần thực hiện tính toán ma trận
+# Làm việc với dữ liệu khoa học
+# Phân tích thống kê đa biến
+
+# Lợi ích sử dụng Matrix
+# Tổ chức dữ liệu hiệu quả
+# Dễ dàng thực hiện tính toán trên toàn bộ dữ liệu
+# Tiết kiệm bộ nhớ
+# Phù hợp cho tính toán thống kê và đại số tuyến tính
