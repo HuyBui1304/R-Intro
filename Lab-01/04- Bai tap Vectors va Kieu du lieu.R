@@ -2,18 +2,62 @@
 # Tạo một số thập phân, sau đó chuyển đổi số đó thành số nguyên 
 # rồi thành ký tự. Quan sát và giải thích sự thay đổi về giá trị 
 # và cách hiển thị của số đó qua mỗi lần chuyển đổi.
-# 
+
+# Tạo số thập phân
+num <- 23.67
+print(num)
+class(num)
+
+# Chuyển sang số nguyên
+num_int <- as.integer(num)
+class(num_int)
+
+
 # 2. Bài tập về ghép chuỗi: 
 # Tạo hai biến chứa văn bản, tìm hiểu tài liệu về hàm paste() 
 # và sử dụng nó để ghép các biến văn bản đã tạo. So sánh kết quả 
 # của hàm paste() với hàm c() và giải thích sự khác biệt giữa chúng.
-# 
+
+text1 <- "Hello"
+text2 <- "Le Nhat Tung"
+help(paste)
+help(paste0)
+
+result1 <- paste(text1, text2)
+result1
+
+result2 <- paste(text1, text2, sep = "-")
+result2
+
+result3 <- paste("a", "b", "c", sep='->')
+result3
+
+result4 <- paste0(text1, text2)
+result4
+
+vectors_s <- c("a", "b", "c")
+result5 <- paste(vectors_s)
+result5
+
+result5 <- paste(vectors_s, collapse = ", ")
+result5
+
+result6 <- paste(c("x", "y"), c("1", "2", "3", "4"), sep = "-", collapse = ";")
+result6
+
+result7 <- paste(c(), c("1", "2", "3", "4"), recycle0 = FALSE)
+result7
+
+
 # 3. Bài tập về xử lý ngày tháng: 
 # Cho vector vecDate <- c("09:12:12", "28:02:16", "31:05:22"). 
 # Hãy: 
 # a) Chuyển đổi vector này sang kiểu Date
 # b) Tính số ngày giữa các ngày trong vector với ngày hiện tại.
-# 
+
+
+
+
 # 4. Bài tập tạo vector số: 
 # Tạo vector "vec1" chứa các số từ 2 đến 8 và từ 17 đến 30 
 # bằng cách viết code ngắn gọn nhất có thể.
