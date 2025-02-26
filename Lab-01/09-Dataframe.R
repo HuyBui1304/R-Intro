@@ -79,4 +79,9 @@ data() # lay ra toan bo dataset được build R
 iris
 View(iris)
 
+CO2    
+
+head(iris)
+tail(iris)
+summary(iris)
 

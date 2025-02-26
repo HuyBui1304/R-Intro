@@ -48,3 +48,7 @@ new_rows <- data.frame(
 
 women <- rbind(women, new_rows)
 women
+
+
+women$shoe_size <- floor(runif(nrow(women), min=35, max=43))
+women
