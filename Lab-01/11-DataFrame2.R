@@ -84,3 +84,14 @@ setMissing = data.frame(
   Region = c(rep("western", 2), rep(NA, 2), rep("eastern", 1), rep(NA, 5)),
   Wages = c(seq(2000, 3500, 500), NA, seq(4000, 5000, 500), rep(NA, 2))
 )
+setMissing
+
+# Lấy các dòng đầy đủ (không có NA)
+setMissing[complete.cases(setMissing),]
+
+
+# Lấy các dòng có ít nhất 1 NA
+setMissing[!complete.cases(setMissing),]
+
+setMissing[is.na(setMissing$Region) | is.na(setMissing$Wages),] 
+
